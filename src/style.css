@@ -27,6 +27,15 @@ body {
     text-transform: capitalize;
 }
 
+#paragraphText {
+    font-size: 32px; /* Tamaño más pequeño para móviles */
+    letter-spacing: 2px;
+    line-height: 1.5;
+    word-spacing: 0px;
+    font-weight: 300;
+    font-style: italic;
+}
+
 #hvr-svg {
     fill: currentColor;
     width: 50%; /* Tamaño inicial más pequeño para móviles */
@@ -39,19 +48,180 @@ body {
     padding: 0.5rem 1rem; /* Padding base para móviles */
 }
 
+/* Experiencias */
+#TheExperiences {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    margin: 10% auto;
+}
+
+#TheExperiences h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #343a40;
+    text-align: center;
+}
+
+
+
+.experiences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.experience {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.experience h3 {
+    background-color: #0056b3;
+    color: white;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.experience p {
+    padding: 10px 15px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.experience p:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.experience p:last-child {
+    text-align: right;
+    font-style: italic;
+    color: #666;
+}
+
+
+/* Projects */
+/* Estilos generales */
+#TheProjects {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    margin: 10% auto;
+}
+
+#TheProjects h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #343a40;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.project p {
+    font-size: 1em;
+    color: #6c757d;
+}
+
+/* Estilos para móviles */
+@media (max-width: 576px) {
+    .project {
+        max-width: 100%;
+    }
+
+    #TheProjects h2 {
+        font-size: 2em;
+    }
+
+    .project h3 {
+        font-size: 1.25em;
+    }
+
+    .project p {
+        font-size: 0.9em;
+    }
+}
+
 /* Estilos para tabletas */
 @media (min-width: 768px) {
     #demoFont {
-        font-size: 72px; /* Tamaño intermedio para tabletas */
+        font-size: 72px; 
     }
 
     #hvr-svg {
-        width: 75%; /* Tamaño intermedio para tabletas */
+        width: 75%; 
     }
 
     #HeaderButtons button {
-        font-size: 1.25rem; /* Tamaño de fuente aumentado para tabletas */
-        padding: 0.75rem 1.5rem; /* Padding aumentado para tabletas */
+        font-size: 1.25rem; 
+        padding: 0.75rem 1.5rem; 
+    }
+
+    #paragraphText {
+        font-size: 48px; 
+    }
+
+    /* Experiencias */
+    .experiences {
+        justify-content: space-around;
+    }
+
+    .experience {
+        width: 45%; 
+    }
+
+    /* Projects */
+    .project {
+        max-width: 45%;
+    }
+
+    #TheProjects h2 {
+        font-size: 2.25em;
+    }
+
+    .project h3 {
+        font-size: 1.35em;
+    }
+
+    .project p {
+        font-size: 0.95em;
     }
 }
 
@@ -73,12 +243,42 @@ body {
         padding: 1rem 2rem; /* Padding aumentado para desktop */
     }
 
-    
+    #paragraphText {
+        font-size: 36px; /* Tamaño original para desktop */
+    }
+
+    /* Experiencias */
+    .experience {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    /* Projects */
+    .project {
+        max-width: 30%;
+    }
 }
 
 /* Estilos de hover */
-#demoFont:hover, #hvr-svg:hover {
+#demoFont:hover,
+#hvr-svg:hover {
     color: var(--color-hover); /* Color celeste al hacer hover */
     fill: var(--color-hover); /* Aplica también al SVG */
     transition: color var(--transition-time);
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
