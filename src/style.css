@@ -1,6 +1,5 @@
 /* Estilos globales.css */
 
-/* Variables CSS para mantener la consistencia */
 :root {
     --font-family-main: sans-serif;
     /* Impact, Charcoal,  */
@@ -9,7 +8,6 @@
     --transition-time: 0.4s;
 }
 
-/* Estilos base para móviles */
 body {
     font-family: var(--font-family-main);
     color: var(--color-text-main);
@@ -43,13 +41,20 @@ body {
     transition: fill var(--transition-time);
 }
 
-#HeaderButtons button {
-    font-size: 1rem; /* Tamaño de fuente base para móviles */
-    padding: 0.5rem 1rem; /* Padding base para móviles */
+#HeaderButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 /* Experiencias */
-#TheExperiences {
+#TheExperiences,
+#TheProjects,
+#TheCertificate,
+#TheContact,
+#TheTecnologies,
+#TheSchool {
     padding: 50px 0;
     background-color: #f8f9fa;
     margin: 10% auto;
@@ -62,8 +67,6 @@ body {
     color: #343a40;
     text-align: center;
 }
-
-
 
 .experiences {
     display: flex;
@@ -82,11 +85,6 @@ body {
     width: 300px;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
-}
-
-.experience:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .experience h3 {
@@ -114,15 +112,7 @@ body {
     color: #666;
 }
 
-
 /* Projects */
-/* Estilos generales */
-#TheProjects {
-    padding: 50px 0;
-    background-color: #f8f9fa;
-    margin: 10% auto;
-}
-
 #TheProjects h2 {
     font-size: 2.5em;
     font-weight: bold;
@@ -134,30 +124,276 @@ body {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project h3 {
+    background-color: #0056b3;
+    color: white;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.project p {
+    padding: 10px 15px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* Certificate */
+#TheCertificate h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #343a40;
+    text-align: center;
+}
+
+.certificates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.certificate {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.certificate h3 {
+    background-color: #0056b3;
+    color: white;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.certificate p {
+    padding: 10px 15px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.certificate p:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.certificate p:last-child {
+    text-align: right;
+    font-style: italic;
+    color: #666;
+}
+
+
+/* School */
+#TheSchool h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #343a40;
+    text-align: center;
+}
+
+.schools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.school {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.school h3 {
+    background-color: #0056b3;
+    color: white;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.school p {
+    padding: 10px 15px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.school p:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.school p:last-child {
+    text-align: right;
+    font-style: italic;
+    color: #666;
+}
+
+
+/* Tecnologies */
+#TheTecnologies h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #343a40;
+    text-align: center;
+}
+
+.tecnologies {
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
 
-.project {
+.tecnology {
     background-color: #ffffff;
     border: 1px solid #dee2e6;
     border-radius: 10px;
     padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.tecnology h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.tecnology img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.tecnology:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+/* Footer Contact Section */
+.contact {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.contact .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #007bff;
+}
+
+.contact__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact__item {
+    flex: 1 1 30%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition:
         transform 0.3s,
         box-shadow 0.3s;
 }
 
-.project h3 {
+.contact__item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact__title {
     font-size: 1.5em;
     margin-bottom: 15px;
     color: #007bff;
 }
 
-.project p {
+.contact__text {
     font-size: 1em;
     color: #6c757d;
+}
+
+.contact__text a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact__text a:hover {
+    color: #0056b3;
+}
+
+.contact__link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #55faf7;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact__link:hover {
+    background-color: #6fecf5;
 }
 
 /* Estilos para móviles */
@@ -177,25 +413,62 @@ body {
     .project p {
         font-size: 0.9em;
     }
+
+    #TheCertificate h2 {
+        font-size: 2em;
+    }
+
+    .certificate h3 {
+        font-size: 1.25em;
+    }
+
+    .certificate p {
+        font-size: 0.9em;
+    }
+
+    #TheSchool h2 {
+        font-size: 2em;
+    }
+
+    .school h3 {
+        font-size: 1.25em;
+    }
+
+    .school p {
+        font-size: 0.9em;
+    }
+
+    #TheTecnologies h2 {
+        font-size: 2em;
+    }
+
+    .tecnology {
+        width: 100%;
+    }
+
+    .tecnology h3 {
+        font-size: 1.25em;
+    }
+    
 }
 
 /* Estilos para tabletas */
 @media (min-width: 768px) {
     #demoFont {
-        font-size: 72px; 
+        font-size: 72px;
     }
 
     #hvr-svg {
-        width: 75%; 
+        width: 75%;
     }
 
     #HeaderButtons button {
-        font-size: 1.25rem; 
-        padding: 0.75rem 1.5rem; 
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
     }
 
     #paragraphText {
-        font-size: 48px; 
+        font-size: 48px;
     }
 
     /* Experiencias */
@@ -204,18 +477,16 @@ body {
     }
 
     .experience {
-        width: 45%; 
+        width: 45%;
     }
 
     /* Projects */
-    .project {
-        max-width: 45%;
-    }
-
     #TheProjects h2 {
         font-size: 2.25em;
     }
-
+    .project {
+        max-width: 45%;
+    }
     .project h3 {
         font-size: 1.35em;
     }
@@ -223,6 +494,63 @@ body {
     .project p {
         font-size: 0.95em;
     }
+
+    /* Certificate */
+    #TheCertificate h2 {
+        font-size: 2.25em;
+    }
+
+    .certificates {
+        justify-content: space-around;
+    }
+
+    .certificate {
+        width: 45%;
+    }
+
+    .certificate h3 {
+        font-size: 1.35em;
+    }
+
+    .certificate p {
+        font-size: 0.95em;
+    }
+
+    /* School */
+    #TheSchools h2 {
+        font-size: 2.25em;
+    }
+
+    .schools {
+        justify-content: space-around;
+    }
+
+    .school {
+        width: 45%;
+    }
+
+    .school h3 {
+        font-size: 1.35em;
+    }
+
+    .school p {
+        font-size: 0.95em;
+    }
+
+    /* Tecnologies */
+
+    #TheTecnologies h2 {
+        font-size: 2.25em;
+    }
+
+    .tecnologies {
+        justify-content: space-around;
+    }
+
+    .tecnology {
+        width: 45%;
+    }
+    
 }
 
 /* Estilos para desktop */
@@ -234,34 +562,42 @@ body {
     }
 
     #hvr-svg {
-        width: 100%; /* Tamaño completo para desktop */
+        width: 100%;
     }
 
     /* Styles para el header */
     #HeaderButtons button {
-        font-size: 1.5rem; /* Tamaño de fuente aumentado para desktop */
-        padding: 1rem 2rem; /* Padding aumentado para desktop */
+        font-size: 1.5rem; 
+        padding: 1rem 2rem; 
     }
 
     #paragraphText {
-        font-size: 36px; /* Tamaño original para desktop */
+        font-size: 36px;
     }
 
     /* Experiencias */
     .experience {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        width: 300px;
-        margin-bottom: 20px;
-        transition: transform 0.3s ease;
+        width: 30%;
     }
 
     /* Projects */
     .project {
-        max-width: 30%;
+        width: 30%;
+    }
+
+    /* Certificate */
+    .certificate {
+        width: 30%;
+    }
+
+    /* School */
+    .school {
+        width: 30%;
+    }
+
+    /* Tecnologies */
+    .tecnology {
+        width: 30%;
     }
 }
 
@@ -279,6 +615,21 @@ body {
 }
 
 .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certificate:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.school:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tecnology:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

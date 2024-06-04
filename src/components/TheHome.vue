@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 my-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 mt-20">
         <div class="justify-self-center place-content-center animate-fade-in-right">
             <svg
                 id="hvr-svg"
@@ -18,10 +18,124 @@
             <p id="demoFont">Hi!, Welcome to my web site.</p>
         </div>
     </div>
-
-    <div class="grid justify-center animate-fade-in-up">
-        <p id="demoFont">Who I'am?</p>
-    </div>
 </template>
+
+<style>
+
+/* Home Section */
+.grid {
+    display: grid;
+    gap: 20px;
+    padding: 50px 15px;
+    background-color: #f0f2f5;
+}
+
+.grid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .md\\:grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.justify-self-center {
+    justify-self: center;
+}
+
+.place-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+    .md\\:text-8xl {
+        font-size: 6rem;
+    }
+}
+
+.justify-self-start {
+    justify-self: start;
+}
+
+.self-center {
+    align-self: center;
+}
+
+#demoFont {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #343a40;
+    text-align: center;
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+.animate-fade-in-left {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    fill: #007bff;
+    transition: fill 0.3s;
+}
+
+svg:hover {
+    fill: #0056b3;
+}
+</style>
 
 

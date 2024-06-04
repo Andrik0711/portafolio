@@ -1,36 +1,47 @@
 <template>
     <div id="HeaderButtons" class="flex flex-wrap justify-center animate-fade-in">
-        <button
+        <router-link
+            to="/"
             class="hvr-grow-rotate m-2 bg-green-400 text-black p-2 rounded transition duration-300 ease-in-out hover:bg-blue-400"
         >
             Home
-        </button>
-        <button
+        </router-link>
+        <router-link
+            to="/about"
             class="hvr-grow-rotate m-2 bg-green-400 text-black p-2 rounded transition duration-300 ease-in-out hover:bg-blue-400"
         >
             About
-        </button>
-        <button
+        </router-link>
+        <router-link
+            to="/experience"
             class="hvr-grow-rotate m-2 bg-green-400 text-black p-2 rounded transition duration-300 ease-in-out hover:bg-blue-400"
         >
             Experience
-        </button>
-        <button
+        </router-link>
+        <router-link
+            to="/projects"
             class="hvr-grow-rotate m-2 bg-green-400 text-black p-2 rounded transition duration-300 ease-in-out hover:bg-blue-400"
         >
             Projects
-        </button>
-        
-        <button
+        </router-link>
+        <router-link
+            to="/technologies"
+            class="hvr-grow-rotate m-2 bg-green-400 text-black p-2 rounded transition duration-300 ease-in-out hover:bg-blue-400"
+        >
+            Technologies
+        </router-link>
+        <router-link
+            to="/school"
             class="hvr-grow-rotate m-2 bg-green-400 text-black p-2 rounded transition duration-300 ease-in-out hover:bg-blue-400"
         >
             School
-        </button>
-        <button
+        </router-link>
+        <router-link
+            to="/contact"
             class="hvr-grow-rotate m-2 bg-green-400 text-black p-2 rounded transition duration-300 ease-in-out hover:bg-blue-400"
         >
             Contact
-        </button>
+        </router-link>
     </div>
 </template>
 
