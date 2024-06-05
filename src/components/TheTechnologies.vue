@@ -1,6 +1,6 @@
 <template>
     <section id="TheTecnologies">
-        <h2 id="demoFont" class="animate-blurred-fade-in text-center">Conocimiento</h2>
+        <h2 id="demoFont" class="animate-blurred-fade-in text-center">knowledge</h2>
         <div class="tecnologies">
             <div class="tecnology" v-for="tecnology in tecnologies" :key="tecnology.id">
                 <h3 class="text-center">{{ tecnology.title }}</h3>

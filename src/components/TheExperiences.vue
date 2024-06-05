@@ -1,6 +1,6 @@
 <template>
     <section id="TheExperiences">
-        <h2 id="demoFont" class="animate-blurred-fade-in text-center">Experiences</h2>
+        <h2 id="demoFont" class="animate-blurred-fade-in text-center">Experience</h2>
         <div class="experiences">
             <div class="experience" v-for="experience in experiences" :key="experience.id">
                 <h3 class="text-center">{{ experience.title }}</h3>
@@ -19,24 +19,25 @@ export default {
             experiences: [
                 {
                     id: 1,
-                    title: 'Pasante de Desarrollo',
-                    description: 'Pasante de Desarrollo en Gobierno del Estado de Tamaulipas.',
-                    date: 'Junio - Agosto, 2019'
+                    title: 'Development Intern',
+                    description: 'Development Intern at the Government of the State of Tamaulipas.',
+                    date: 'June - August, 2019'
                 },
                 {
                     id: 2,
-                    title: 'Desarrollador Web',
-                    description: 'Desarrollador de aplicaciones web en la Universidad Politécnica de Victoria.',
-                    date: 'Septiembre - Diciembre, 2023'
+                    title: 'Web Developer',
+                    description: 'Web application developer at the Polytechnic University of Victoria.',
+                    date: 'September - December, 2023'
                 },
                 {
                     id: 3,
-                    title: 'Desarrollador Full Stack',
-                    description: 'Desarrollador Full Stack en el Colegio de Bachilleres del Estado de Tamaulipas (COBAT) Oficina Central.',
-                    date: 'Enero - Abril, 2024'
+                    title: 'Full Stack Developer',
+                    description: 'Full Stack Developer at the College of Bachelors of the State of Tamaulipas (COBAT) Central Office.',
+                    date: 'January - April, 2024'
                 }
             ]
         }
     }
 }
 </script>
+

@@ -18,39 +18,39 @@ export default {
             projects: [
                 {
                     id: 1,
-                    title: 'Sitio Web Personal',
+                    title: 'Personal Website',
                     description:
-                        'Diseño y desarrollo de un sitio web personal, utilizando HTML, CSS, JavaScript y VueJS. El proyecto incluye la integración de un blog personal, una sección de portafolio y un formulario de contacto, ofreciendo una plataforma para la presentación profesional y el contacto directo.'
+                        'Design and development of a personal website using HTML, CSS, JavaScript, and VueJS. The project includes the integration of a personal blog, a portfolio section, and a contact form, offering a platform for professional presentation and direct contact.'
                 },
                 {
                     id: 2,
-                    title: 'Aplicación Web para la Corrección de Texto',
+                    title: 'Text Correction Web Application',
                     description:
-                        'Desarrollo de una aplicación web dedicada a la corrección de texto en la Universidad Politécnica de Victoria. El proyecto involucra la creación de una interfaz de usuario intuitiva y funcional, así como la implementación de funciones para la corrección gramatical y ortográfica, proporcionando una herramienta eficiente para la mejora de documentos escritos.'
+                        'Development of a web application dedicated to text correction at the Polytechnic University of Victoria. The project involves creating an intuitive and functional user interface, as well as implementing features for grammatical and spelling correction, providing an efficient tool for improving written documents.'
                 },
                 {
                     id: 3,
-                    title: 'Sitio Web con Inteligencia Artificial',
+                    title: 'Website with Artificial Intelligence',
                     description:
-                        'Desarrollo y despliegue de un sitio web integrado con capacidades de inteligencia artificial.'
+                        'Development and deployment of a website integrated with artificial intelligence capabilities.'
                 },
                 {
                     id: 4,
-                    title: 'Sistema de Inventarios',
+                    title: 'Inventory System',
                     description:
-                        'Diseño y desarrollo de un sistema integral de inventarios para una tienda. Donde se pueden registrar productos, realizar ventas, generar reportes y llevar un control de inventario. El sistema incluye un panel de administración para la gestión de productos y ventas, así como una interfaz de usuario para la realización de compras y consultas.'
+                        'Design and development of a comprehensive inventory system for a store. It includes product registration, sales, report generation, and inventory control. The system features an admin panel for managing products and sales, as well as a user interface for making purchases and inquiries.'
                 },
                 {
                     id: 5,
-                    title: 'Sitio Web para un Gimnasio',
+                    title: 'Gym Website',
                     description:
-                        'Creación de un sitio web para un gimnasio, donde se pueden encontrar los servicios que se ofrecen, horarios, precios, altas, bajas y estadisticas. Además, se incluye un formulario de contacto para solicitar más información.'
+                        'Creation of a website for a gym, showcasing the services offered, schedules, prices, memberships, and statistics. Additionally, it includes a contact form for requesting more information.'
                 },
                 {
                     id: 6,
-                    title: 'Casa IoT con Sitio Web',
+                    title: 'IoT House with Website',
                     description:
-                        'Creción de una Casa con herramientas de Arduino contruida desde cero, implementando detección de moviemiento y usando la tecnologia open sources de Node Red para la interfaz móvil y web.'
+                        'Creation of a house with Arduino tools built from scratch, implementing motion detection and using the open-source technology Node-RED for the mobile and web interface.'
                 }
             ]
         }

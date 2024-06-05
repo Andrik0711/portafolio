@@ -1,21 +1,21 @@
 <template>
     <section id="contact" class="contact mt-10">
         <div class="container">
-            <h2 class="section-title">Contacto</h2>
+            <h2 class="section-title">Contact</h2>
             <div class="contact__content">
                 <div class="contact__item">
-                    <h3 class="contact__title">Teléfono</h3>
+                    <h3 class="contact__title">Phone</h3>
                     <p class="contact__text">+52 834-145-0917</p>
                 </div>
                 <div class="contact__item">
-                    <h3 class="contact__title">Correo</h3>
+                    <h3 class="contact__title">Email</h3>
                     <p class="contact__text">
                         <a href="mailto:contacto@example.com">mtzrdz19.jandrik71@gmail.com</a>
                     </p>
                 </div>
                 <div class="contact__item">
-                    <h3 class="contact__title">Dirección</h3>
-                    <p class="contact__text">Tamaulipas, México</p>
+                    <h3 class="contact__title">Address</h3>
+                    <p class="contact__text">Ciudad Victoria, Tamaulipas, México</p>
                 </div>
                 <div class="contact__item">
                     <h3 class="contact__title">LinkedIn</h3>
@@ -25,7 +25,7 @@
                             target="_blank"
                             class="contact__link"
                         >
-                            Visitar perfil
+                            Visit profile
                         </a>
                     </p>
                 </div>
@@ -37,7 +37,7 @@
                             target="_blank"
                             class="contact__link"
                         >
-                            Visitar perfil
+                            Visit profile
                         </a>
                     </p>
                 </div>
@@ -51,4 +51,3 @@ export default {
     name: 'ContactSection'
 }
 </script>
-

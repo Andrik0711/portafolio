@@ -1,6 +1,6 @@
 <template>
     <section id="TheSchool">
-        <h2 id="demoFont" class="animate-blurred-fade-in text-center">Educación</h2>
+        <h2 id="demoFont" class="animate-blurred-fade-in text-center">Education</h2>
         <div class="schools">
             <div class="school" v-for="school in schools" :key="school.id">
                 <h3 class="text-center">{{ school.title }}</h3>
@@ -19,20 +19,20 @@ export default {
             schools: [
                 {
                     id: 1,
-                    title: 'Ingeniería en Tecnologías de la Información',
-                    description: 'UNIVERSIDAD POLITÉCNICA DE VICTORIA.',
-                    date: 'Abril, 2024'
+                    title: 'Information Technology Engineering',
+                    description: 'POLYTECHNIC UNIVERSITY OF VICTORIA.',
+                    date: 'April, 2024'
                 },
                 {
                     id: 2,
-                    title: 'Técnico en Programación',
-                    description: 'CENTRO DE BACHILLERATO TECNOLÓGICO INDUSTRIAL Y DE SERVICIOS NO. 119',
-                    date: 'Agosto, 2020'
+                    title: 'Technician in Programming',
+                    description: 'INDUSTRIAL AND SERVICES TECHNOLOGICAL BACCALAUREATE CENTER NO. 119',
+                    date: 'August, 2020'
                 },
                 {
                     id: 3,
-                    title: 'Curso de Desarrollo de Aplicaciones Web',
-                    description: 'Universidad Politécnica de Victoria.',
+                    title: 'Web Application Development Course',
+                    description: 'Polytechnic University of Victoria.',
                     date: '2023'
                 }
             ]
