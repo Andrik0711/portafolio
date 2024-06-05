@@ -1,7 +1,7 @@
 <template>
     <section id="TheTecnologies">
         <h2 id="demoFont" class="animate-blurred-fade-in text-center">knowledge</h2>
-        <div class="tecnologies">
+        <div class="tecnologies animate-blurred-fade-in">
             <div class="tecnology" v-for="tecnology in tecnologies" :key="tecnology.id">
                 <h3 class="text-center">{{ tecnology.title }}</h3>
                 <div class="grid justify-center align-middle items-center">

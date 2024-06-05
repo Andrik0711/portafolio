@@ -1,7 +1,7 @@
 <template>
-    <section id="contact" class="contact mt-10">
+    <section id="TheContact" class="contact mt-10 animate-blurred-fade-in">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title" id="demoFont">Contact</h2>
             <div class="contact__content">
                 <div class="contact__item">
                     <h3 class="contact__title">Phone</h3>

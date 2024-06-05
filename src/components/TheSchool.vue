@@ -1,7 +1,7 @@
 <template>
     <section id="TheSchool">
         <h2 id="demoFont" class="animate-blurred-fade-in text-center">Education</h2>
-        <div class="schools">
+        <div class="schools animate-blurred-fade-in ">
             <div class="school" v-for="school in schools" :key="school.id">
                 <h3 class="text-center">{{ school.title }}</h3>
                 <p class=" text-justify" >{{ school.description }}</p>

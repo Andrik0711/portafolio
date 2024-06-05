@@ -311,8 +311,14 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
-/* Footer Contact Section */
+/* Contact Section */
+#TheContact h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #343a40;
+    text-align: center;
+}
 .contact {
     padding: 50px 0;
     background-color: #f8f9fa;
@@ -323,14 +329,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.section-title {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #007bff;
 }
 
 .contact__content {

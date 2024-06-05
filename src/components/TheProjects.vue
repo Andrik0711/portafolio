@@ -1,7 +1,7 @@
 <template>
     <section id="TheProjects">
         <h2 id="demoFont" class="animate-blurred-fade-in text-center">Projects realiced by me</h2>
-        <div class="projects">
+        <div class="projects animate-blurred-fade-in">
             <div class="project" v-for="project in projects" :key="project.id">
                 <h3 class="text-center" >{{ project.title }}</h3>
                 <p class="text-justify" >{{ project.description }}</p>
