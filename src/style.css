@@ -156,7 +156,6 @@ body {
     line-height: 1.6;
 }
 
-
 /* Certificate */
 #TheCertificate h2 {
     font-size: 2.5em;
@@ -210,7 +209,6 @@ body {
     color: #666;
 }
 
-
 /* School */
 #TheSchool h2 {
     font-size: 2.5em;
@@ -237,6 +235,9 @@ body {
     width: 300px;
     margin-bottom: 20px;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures that items are spread out and the last child is at the bottom */
 }
 
 .school h3 {
@@ -252,15 +253,17 @@ body {
     padding: 10px 15px;
     margin: 0;
     line-height: 1.6;
+    flex: 1; /* Makes the paragraph take the available space */
 }
-
 
 .school p:not(:last-child) {
     border-bottom: 1px solid #eee;
 }
 
 .school p:last-child {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the right */
+    align-items: center; /* Vertically centers the content */
     font-style: italic;
     color: #666;
 }
@@ -289,7 +292,9 @@ body {
     padding: 20px;
     width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
     text-align: center;
 }
 
@@ -448,7 +453,6 @@ body {
     .tecnology h3 {
         font-size: 1.25em;
     }
-    
 }
 
 /* Estilos para tabletas */
@@ -549,7 +553,6 @@ body {
     .tecnology {
         width: 45%;
     }
-    
 }
 
 /* Estilos para desktop */
@@ -566,8 +569,8 @@ body {
 
     /* Styles para el header */
     #HeaderButtons button {
-        font-size: 1.5rem; 
-        padding: 1rem 2rem; 
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
     }
 
     #paragraphText {
