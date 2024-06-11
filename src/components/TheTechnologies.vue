@@ -82,6 +82,11 @@ export default {
                     id: 13,
                     title: 'GitHub',
                     img: '/github-svgrepo-com.svg'
+                },
+                {
+                    id: 14,
+                    title: 'PHP',
+                    img: '/php2-svgrepo-com.svg'
                 }
             ]
         }

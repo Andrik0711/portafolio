@@ -66,7 +66,7 @@ export default {
                 },
                 {
                     id: 7,
-                    title: 'Constancia BUAP',
+                    title: 'Constancy BUAP',
                     description: 'MERITORIUS AUTONOMOUS UNIVERSITY OF PUEBLA.',
                     date: 'November 20, 2023.',
                     img: 'certificates/CONACIC2023_ID_23.webp'
