@@ -4,11 +4,12 @@
     </div>
     <div class="my-6 animate-jump">
         <p id="paragraphText" class="text-center">
-            I am a software developer with experience in web development, I have worked with
-            technologies such as HTML, CSS, JavaScript, Vue, Node.js, Oracle, SQL, among others. I
-            am passionate about learning new technologies and improving my skills. I am a proactive
-            person, with a great capacity for teamwork and problem solving. I am always looking for
-            new challenges and opportunities to grow professionally.
+            I'm a programmer excited to learn new technologies and improve my skills. Every day I
+            strive to push my own limits and find innovative solutions to the challenges that come
+            my way. I'm passionate about the idea that the code I write can have a positive impact.
+            In addition, I enjoy collaborating with other professionals, sharing knowledge and
+            learning from their experiences, which further enriches my personal and professional
+            growth.
         </p>
     </div>
 </template>
