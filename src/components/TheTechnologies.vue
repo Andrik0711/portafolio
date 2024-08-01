@@ -33,11 +33,11 @@ export default {
                     title: 'JavaScript',
                     img: '/javascript-svgrepo-com.svg'
                 },
-                {
-                    id: 4,
-                    title: 'Vue.js',
-                    img: '/vue-svgrepo-com.svg'
-                },
+                // {
+                //     id: 4,
+                //     title: 'Vue.js',
+                //     img: '/vue-svgrepo-com.svg'
+                // },
                 {
                     id: 5,
                     title: 'Tailwind CSS',
@@ -58,26 +58,26 @@ export default {
                     title: 'Laravel',
                     img: '/laravel-svgrepo-com.svg'
                 },
-                {
-                    id: 9,
-                    title: 'Oracle',
-                    img: '/oracle-svgrepo-com.svg'
-                },
+                // {
+                //     id: 9,
+                //     title: 'Oracle',
+                //     img: '/oracle-svgrepo-com.svg'
+                // },
                 {
                     id: 10,
                     title: 'MySQL',
                     img: '/mysql-logo-svgrepo-com.svg'
                 },
-                {
-                    id: 11,
-                    title: 'Java',
-                    img: '/java-svgrepo-com.svg'
-                },
-                {
-                    id: 12,
-                    title: 'Python',
-                    img: '/python-svgrepo-com.svg'
-                },
+                // {
+                //     id: 11,
+                //     title: 'Java',
+                //     img: '/java-svgrepo-com.svg'
+                // },
+                // {
+                //     id: 12,
+                //     title: 'Python',
+                //     img: '/python-svgrepo-com.svg'
+                // },
                 {
                     id: 13,
                     title: 'GitHub',
@@ -87,6 +87,11 @@ export default {
                     id: 14,
                     title: 'PHP',
                     img: '/php2-svgrepo-com.svg'
+                },
+                {
+                    id: 15,
+                    title: 'GIT',
+                    img: '/git-svgrepo-com.svg'
                 }
             ]
         }
